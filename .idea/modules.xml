@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RozetkaTestNew.iml" filepath="$PROJECT_DIR$/.idea/modules/RozetkaTestNew.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RozetkaTestNew_main.iml" filepath="$PROJECT_DIR$/.idea/modules/RozetkaTestNew_main.iml" group="RozetkaTestNew" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RozetkaTestNew_test.iml" filepath="$PROJECT_DIR$/.idea/modules/RozetkaTestNew_test.iml" group="RozetkaTestNew" />
+    </modules>
+  </component>
+</project>
