@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RozetkaTestNew.iml" filepath="$PROJECT_DIR$/.idea/modules/RozetkaTestNew.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RozetkaTestNew_main.iml" filepath="$PROJECT_DIR$/.idea/modules/RozetkaTestNew_main.iml" group="RozetkaTestNew" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RozetkaTestNew_test.iml" filepath="$PROJECT_DIR$/.idea/modules/RozetkaTestNew_test.iml" group="RozetkaTestNew" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rozetka_test.iml" filepath="$PROJECT_DIR$/.idea/modules/rozetka_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rozetka_test_main.iml" filepath="$PROJECT_DIR$/.idea/modules/rozetka_test_main.iml" group="rozetka_test" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rozetka_test_test.iml" filepath="$PROJECT_DIR$/.idea/modules/rozetka_test_test.iml" group="rozetka_test" />
     </modules>
   </component>
 </project>
