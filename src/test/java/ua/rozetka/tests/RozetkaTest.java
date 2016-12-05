@@ -5,35 +5,23 @@ package ua.rozetka.tests;
  */
 
 
-        import java.sql.Connection;
-        import java.sql.DriverManager;
-        import java.sql.PreparedStatement;
-        import java.util.*;
-        import java.util.concurrent.TimeUnit;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.util.concurrent.TimeUnit;
 
-        import org.openqa.selenium.NoSuchElementException;
-        import org.openqa.selenium.support.ui.Select;
-        import org.testng.annotations.*;
-        import static org.testng.Assert.*;
-        import org.openqa.selenium.*;
-        import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.NoSuchElementException;
+
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.*;
+
+import static org.testng.Assert.*;
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 
 public class RozetkaTest {
-    int id = 1;
-
-    String name1 = null;
-    String name2 = null;
-    String name3 = null;
-    String name4 = null;
-
-    String price1 = null;
-    String price2 = null;
-    String price3 = null;
-    String price4 = null;
-
-//    String namePhone = null;
-//    String phonePrice = null;
 
     private WebDriver driver;
     private String baseUrl;
@@ -45,25 +33,16 @@ public class RozetkaTest {
         driver = new FirefoxDriver();
         baseUrl = "http://rozetka.com.ua/";
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.get(baseUrl + "/");
     }
 
     @Test
     public void testRozetka() throws Exception {
-        driver.get(baseUrl + "/");
-//        driver.findElement(By.linkText("войдите в личный кабинет")).click();
-//        driver.findElement(By.name("login")).click();
-//        driver.findElement(By.name("login")).clear();
-//        driver.findElement(By.name("login")).sendKeys("fejoz@rootfest.net");
-//        driver.findElement(By.name("password")).click();
-//        driver.findElement(By.name("password")).clear();
-//        driver.findElement(By.name("password")).sendKeys("Test1234");
-//        driver.findElement(By.name("auth_submit")).click();
-        driver.findElement(By.linkText("Телефоны, ТВ и электроника")).click();
-        driver.findElement(By.linkText("Телефоны")).click();
-        driver.findElement(By.linkText("Смартфоны")).click();
 
-//        driver.findElement(By.name("drop_link")).click();
-//        driver.findElement(By.linkText("популярные")).click();
+        login("fejoz@rootfest.net", "Test1234");
+        navigateToSmartphones();
+        TimeUnit.SECONDS.sleep(2);
+        selectFromDropDown();
 
 
        /* String[] allLinks = new String[]{
@@ -116,35 +95,105 @@ public class RozetkaTest {
 //            String phonePrice = driver.findElement(By.cssSelector(".g-price")).getText();
 //            System.out.println(phonePrice);
 //            Boolean top = driver.findElements(By.cssSelector(".g-tag.g-tag-icon-middle-popularity.sprite")).size() > 0;
-            //String akcija = driver.findElement(By.cssSelector(".g-tag.g-tag-icon-middle-action.sprite")).getText();
+        //String akcija = driver.findElement(By.cssSelector(".g-tag.g-tag-icon-middle-action.sprite")).getText();
 
 
+//        int i =0;
+//        while(i<=31){
+//        WebElement namePhone1 = driver.findElements(By.cssSelector(".g-i-tile-i-title.clearfix>a")).get(0);
+//        String nameToPrint1 = namePhone1.getText();
+//        WebElement pricePhone1 = driver.findElements(By.cssSelector(".g-price-uah")).get(0);
+//        String pricePhoneToPrint1 = pricePhone1.getText();
+//        System.out.println(nameToPrint1);
+//        System.out.println(pricePhoneToPrint1);}
 
-        int i =0;
-        while(i<=31){
-            WebElement namePhone = driver.findElements(By.cssSelector(".g-i-tile-i-title.clearfix>a")).get(i);
-            String nameToPrint = namePhone.getText();
-            WebElement pricePhone = driver.findElements(By.cssSelector(".g-price-uah")).get(i);
-            String pricePhoneToPrint = pricePhone.getText();
-            System.out.println(nameToPrint);
-            System.out.println(pricePhoneToPrint);
-            //if(driver.findElement(By.cssSelector(".g-tag.g-tag-icon-middle-popularity.sprite"))!=null){
-            //driver.findElement(By.xpath("html/body/div[2]/div/div[2]/div[1]/div/div[1]/div[6]/div[1]/div/div/div[2]/div[1]/div/i"))!=null
+        WebElement namePhone1 = driver.findElements(By.cssSelector(".g-i-tile-i-title.clearfix>a")).get(0);
+        String nameToPrint1 = namePhone1.getText();
+        WebElement pricePhone1 = driver.findElements(By.cssSelector(".g-price-uah")).get(0);
+        String pricePhoneToPrint1 = pricePhone1.getText();
+        System.out.println(nameToPrint1);
+        System.out.println(pricePhoneToPrint1);
+        sendToDb(nameToPrint1, pricePhoneToPrint1);
+
+        WebElement namePhone2 = driver.findElements(By.cssSelector(".g-i-tile-i-title.clearfix>a")).get(1);
+        String nameToPrint2 = namePhone2.getText();
+        WebElement pricePhone2 = driver.findElements(By.cssSelector(".g-price-uah")).get(1);
+        String pricePhoneToPrint2 = pricePhone2.getText();
+        System.out.println(nameToPrint2);
+        System.out.println(pricePhoneToPrint2);
+
+        sendToDb(nameToPrint2, pricePhoneToPrint2);
+
+        WebElement namePhone3 = driver.findElements(By.cssSelector(".g-i-tile-i-title.clearfix>a")).get(2);
+        String nameToPrint3 = namePhone3.getText();
+        WebElement pricePhone3 = driver.findElements(By.cssSelector(".g-price-uah")).get(2);
+        String pricePhoneToPrint3 = pricePhone3.getText();
+        System.out.println(nameToPrint3);
+        System.out.println(pricePhoneToPrint3);
+
+        sendToDb(nameToPrint3, pricePhoneToPrint3);
+
+        WebElement namePhone4 = driver.findElements(By.cssSelector(".g-i-tile-i-title.clearfix>a")).get(3);
+        String nameToPrint4 = namePhone4.getText();
+        WebElement pricePhone4 = driver.findElements(By.cssSelector(".g-price-uah")).get(3);
+        String pricePhoneToPrint4 = pricePhone4.getText();
+        System.out.println(nameToPrint4);
+        System.out.println(pricePhoneToPrint4);
+
+        sendToDb(nameToPrint4, pricePhoneToPrint4);
+    }
+    private void selectDropDown(){
+        driver.findElement(By.name("drop_link")).click();
+
+    }
+
+    private void selectFromDropDown() {
+        driver.findElement(By.name("drop_link")).click();
+        driver.findElement(By.linkText("популярные")).click();
+
+    }
+
+    private void navigateToSmartphones() {
+        driver.findElement(By.linkText("Телефоны, ТВ и электроника")).click();
+        driver.findElement(By.linkText("Телефоны")).click();
+        driver.findElement(By.linkText("Смартфоны")).click();
+    }
+
+    private void login(String username, String password) {
+        driver.findElement(By.linkText("войдите в личный кабинет")).click();
+        driver.findElement(By.name("login")).click();
+        driver.findElement(By.name("login")).clear();
+        driver.findElement(By.name("login")).sendKeys(username);
+        driver.findElement(By.name("password")).click();
+        driver.findElement(By.name("password")).clear();
+        driver.findElement(By.name("password")).sendKeys(password);
+        driver.findElement(By.name("auth_submit")).click();
+    }
+//   public String phoneNameAndPrice1(String name, String price ) {
+//       WebElement namePhone1 = driver.findElements(By.cssSelector(".g-i-tile-i-title.clearfix>a")).get(0);
+//       String nameToPrint1 = namePhone1.getText();
+//       WebElement pricePhone1 = driver.findElements(By.cssSelector(".g-price-uah")).get(0);
+//       String pricePhoneToPrint1 = pricePhone1.getText();
+//       return namePhone1, pricePhone1;
+//
+//   }
+    //if(driver.findElement(By.cssSelector(".g-tag.g-tag-icon-middle-popularity.sprite"))!=null){
+    //driver.findElement(By.xpath("html/body/div[2]/div/div[2]/div[1]/div/div[1]/div[6]/div[1]/div/div/div[2]/div[1]/div/i"))!=null
 
 
-            if(){
-                System.out.println("Super");
-            }else{
-                System.out.println("fignja");
-            }
-            System.out.println("--------");
-        }
-
-            i++;// incrementing i value.
-
-
-
-        }
+//            if(){
+//                System.out.println("Super");
+//            }else{
+//                System.out.println("fignja");
+//            }
+//            System.out.println("--------");
+//        }
+//
+//            i++;// incrementing i value.
+//
+//
+//
+//        }
 //        for(int i=0; i<=value; i++){
 //
 //            String s = value.getText();
@@ -163,7 +212,7 @@ public class RozetkaTest {
 //        }
 
 
-        //стринг с первыми 4 вариками
+    //стринг с первыми 4 вариками
         /*String name1 = driver.findElement(By.linkText("Doogee X5 Max Pro Black")).getText();
         System.out.println(name1);
         String price1 = driver.findElement(By.id("goods_price_block_10489462")).getText();
@@ -189,18 +238,18 @@ public class RozetkaTest {
         Connection conn = null;
         try {
             conn = DriverManager.getConnection("jdbc:mysql://localhost/rozetka?user=root&password=");
-            String query = "INSERT INTO smartphones (id, name, price)"
+            String query = "INSERT INTO smartphones (name, price)"
                     + " values (?, ? )";
 
             // create the mysql insert preparedstatement
-            PreparedStatement preparedStmt1 = conn.prepareStatement(query);
-            preparedStmt1.setInt(1, 01);
-            preparedStmt1.setString(2, namePhone);
-            preparedStmt1.setString(3, phonePrice);
+            PreparedStatement preparedStmt = conn.prepareStatement(query);
+            //preparedStmt1.setInt(1, 01);
+            preparedStmt.setString(1, namePhone);
+            preparedStmt.setString(2, phonePrice);
 
 
             // execute the preparedstatement
-            preparedStmt1.execute();
+            preparedStmt.execute();
 
 
             conn.close();
