@@ -44,10 +44,40 @@ public class HelpPage {
     }
 
     public void selectFromDropDown() {
-
         driver.findElement(By.name("drop_link")).click();
         driver.findElement(By.linkText("популярные")).click();
     }
+
+    public void phoneNameAdnPriceSendToDB(int index) {
+        WebElement namePhone1 = driver.findElements(By.cssSelector(".g-i-tile-i-title.clearfix>a")).get(index);
+        String nameToPrint1 = namePhone1.getText();
+        WebElement pricePhone1 = driver.findElements(By.cssSelector(".g-price-uah")).get(index);
+        String pricePhoneToPrint1 = pricePhone1.getText();
+//        System.out.println(nameToPrint1);
+//        System.out.println(pricePhoneToPrint1);
+        sendToDb(nameToPrint1, pricePhoneToPrint1);
+    }
+
+    public void sendToDb(String namePhone, String phonePrice) {
+        Connection conn = null;
+        try {
+            conn = DriverManager.getConnection("jdbc:mysql://localhost/rozetka?user=root&password=");
+            String query = "INSERT INTO smartphones (name, price)"
+                    + " values (?, ? )";
+            // create the mysql insert preparedstatement
+            PreparedStatement preparedStmt = conn.prepareStatement(query);
+            //preparedStmt1.setInt(1, 01);
+            preparedStmt.setString(1, namePhone);
+            preparedStmt.setString(2, phonePrice);
+            // execute the preparedstatement
+            preparedStmt.execute();
+            conn.close();
+        } catch (Exception e) {
+            System.err.println("Got an exception!");
+            System.err.println(e.getMessage());
+        }
+    }
+
 
 }
 
