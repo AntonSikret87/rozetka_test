@@ -45,22 +45,20 @@
       <file leaf-file-name="RozetkaTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ua/rozetka/tests/RozetkaTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-241">
-              <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+            <state relative-caret-position="180">
+              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DbConnectionTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ua/rozetka/tests/DbConnectionTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="42" column="35" lean-forward="false" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#setUp#0;class#RozetkaTest#0" expanded="false" />
+                <element signature="method#testSendNameAndPriceToDB#0;class#RozetkaTest#0" expanded="false" />
+                <element signature="method#selectFromDropDown#0;class#RozetkaTest#0" expanded="false" />
+                <element signature="method#navigateToSmartphones#0;class#RozetkaTest#0" expanded="false" />
+                <element signature="method#login#0;class#RozetkaTest#0" expanded="false" />
+                <element signature="method#sendToDb#0;class#RozetkaTest#0" expanded="false" />
+                <element signature="method#tearDown#0;class#RozetkaTest#0" expanded="false" />
+                <element signature="method#isElementPresent#0;class#RozetkaTest#0" expanded="false" />
+                <element signature="method#isAlertPresent#0;class#RozetkaTest#0" expanded="false" />
+                <element signature="method#closeAlertAndGetItsText#0;class#RozetkaTest#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -511,37 +509,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="rozetka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rozetka_test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rozetka_test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rozetka" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1010,7 +978,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1027,7 +995,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17651403" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17651403" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1048,15 +1016,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ua/rozetka/tests/DbConnectionTest.java</url>
-          <line>46</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="16" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1079,6 +1039,16 @@
           <caret line="48" column="37" lean-forward="false" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#setUp#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#testSendNameAndPriceToDB#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#selectFromDropDown#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#navigateToSmartphones#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#login#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#sendToDb#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#tearDown#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#isElementPresent#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#isAlertPresent#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#closeAlertAndGetItsText#0;class#RozetkaTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1111,6 +1081,16 @@
           <caret line="48" column="37" lean-forward="false" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#setUp#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#testSendNameAndPriceToDB#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#selectFromDropDown#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#navigateToSmartphones#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#login#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#sendToDb#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#tearDown#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#isElementPresent#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#isAlertPresent#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#closeAlertAndGetItsText#0;class#RozetkaTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1157,9 +1137,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1185,6 +1163,16 @@
           <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#setUp#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#testSendNameAndPriceToDB#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#selectFromDropDown#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#navigateToSmartphones#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#login#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#sendToDb#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#tearDown#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#isElementPresent#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#isAlertPresent#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#closeAlertAndGetItsText#0;class#RozetkaTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1203,6 +1191,16 @@
           <caret line="48" column="37" lean-forward="false" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#setUp#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#testSendNameAndPriceToDB#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#selectFromDropDown#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#navigateToSmartphones#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#login#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#sendToDb#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#tearDown#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#isElementPresent#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#isAlertPresent#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#closeAlertAndGetItsText#0;class#RozetkaTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1235,6 +1233,16 @@
           <caret line="48" column="37" lean-forward="false" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#setUp#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#testSendNameAndPriceToDB#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#selectFromDropDown#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#navigateToSmartphones#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#login#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#sendToDb#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#tearDown#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#isElementPresent#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#isAlertPresent#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#closeAlertAndGetItsText#0;class#RozetkaTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1282,9 +1290,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
           <caret line="42" column="35" lean-forward="false" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1310,6 +1316,16 @@
           <caret line="71" column="56" lean-forward="false" selection-start-line="71" selection-start-column="56" selection-end-line="71" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#setUp#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#testSendNameAndPriceToDB#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#selectFromDropDown#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#navigateToSmartphones#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#login#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#sendToDb#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#tearDown#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#isElementPresent#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#isAlertPresent#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#closeAlertAndGetItsText#0;class#RozetkaTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1336,6 +1352,16 @@
           <caret line="48" column="37" lean-forward="false" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#setUp#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#testSendNameAndPriceToDB#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#selectFromDropDown#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#navigateToSmartphones#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#login#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#sendToDb#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#tearDown#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#isElementPresent#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#isAlertPresent#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#closeAlertAndGetItsText#0;class#RozetkaTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1368,6 +1394,16 @@
           <caret line="48" column="37" lean-forward="false" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#setUp#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#testSendNameAndPriceToDB#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#selectFromDropDown#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#navigateToSmartphones#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#login#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#sendToDb#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#tearDown#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#isElementPresent#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#isAlertPresent#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#closeAlertAndGetItsText#0;class#RozetkaTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1412,16 +1448,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ua/rozetka/tests/DbConnectionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="35" lean-forward="false" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ua/rozetka/tests/HelpMethods.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1430,12 +1456,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ua/rozetka/tests/DbConnectionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="42" column="35" lean-forward="false" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ua/rozetka/tests/RozetkaTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-241">
-          <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+        <state relative-caret-position="180">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#setUp#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#testSendNameAndPriceToDB#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#selectFromDropDown#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#navigateToSmartphones#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#login#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#sendToDb#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#tearDown#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#isElementPresent#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#isAlertPresent#0;class#RozetkaTest#0" expanded="false" />
+            <element signature="method#closeAlertAndGetItsText#0;class#RozetkaTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
