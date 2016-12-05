@@ -46,7 +46,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/ua/rozetka/tests/RozetkaTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+              <caret line="42" column="37" lean-forward="true" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,12 +57,12 @@
       <file leaf-file-name="HelpPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ua/rozetka/tests/HelpPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="45" column="38" lean-forward="false" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
+            <state relative-caret-position="-478">
+              <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#744#745#0" expanded="true" />
-                <element signature="e#780#781#0" expanded="true" />
+                <element signature="e#1061#1062#0" expanded="true" />
+                <element signature="e#1097#1098#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -787,12 +787,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RozetkaTest_testSendNameAndPriceToDB - 2016.12.05 at 10h 35m 30s.xml">
-      <configuration name="RozetkaTest.testSendNameAndPriceToDB" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="RozetkaTest_testSendNameAndPriceToDB - 2016.12.05 at 10h 39m 05s.xml">
-      <configuration name="RozetkaTest.testSendNameAndPriceToDB" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="RozetkaTest_testSendNameAndPriceToDB - 2016.12.05 at 10h 41m 22s.xml">
       <configuration name="RozetkaTest.testSendNameAndPriceToDB" configurationId="TestNG" />
     </history-entry>
@@ -815,6 +809,12 @@
       <configuration name="RozetkaTest.testSendNameAndPriceToDB" configurationId="TestNG" />
     </history-entry>
     <history-entry file="RozetkaTest_testSendNameAndPriceToDB - 2016.12.05 at 10h 53m 50s.xml">
+      <configuration name="RozetkaTest.testSendNameAndPriceToDB" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="RozetkaTest_testSendNameAndPriceToDB - 2016.12.05 at 11h 08m 50s.xml">
+      <configuration name="RozetkaTest.testSendNameAndPriceToDB" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="RozetkaTest_testSendNameAndPriceToDB - 2016.12.05 at 11h 10m 10s.xml">
       <configuration name="RozetkaTest.testSendNameAndPriceToDB" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -1228,12 +1228,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ua/rozetka/tests/HelpPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="45" column="38" lean-forward="false" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
+        <state relative-caret-position="-478">
+          <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#744#745#0" expanded="true" />
-            <element signature="e#780#781#0" expanded="true" />
+            <element signature="e#1061#1062#0" expanded="true" />
+            <element signature="e#1097#1098#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1241,7 +1241,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/ua/rozetka/tests/RozetkaTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+          <caret line="42" column="37" lean-forward="true" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
