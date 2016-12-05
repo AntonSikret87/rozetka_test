@@ -25,8 +25,7 @@ public class RozetkaTest {
 
     private WebDriver driver;
     private String baseUrl;
-    private boolean acceptNextAlert = true;
-    private StringBuffer verificationErrors = new StringBuffer();
+
 
     @BeforeClass(alwaysRun = true)
     public void setUp() throws Exception {
@@ -39,10 +38,10 @@ public class RozetkaTest {
     @Test
     public void testSendNameAndPriceToDB() throws Exception {
 
-        login("fejoz@rootfest.net", "Test1234");
-        navigateToSmartphones();
-        TimeUnit.SECONDS.sleep(2);
-        selectFromDropDown();
+        HelpPage helpPage =new HelpPage(driver);
+        helpPage.loginToRozetka("fejoz@rootfest.net", "Test1234");
+        helpPage.navigateToSmartphones();
+        helpPage.selectFromDropDown();
 
         WebElement namePhone1 = driver.findElements(By.cssSelector(".g-i-tile-i-title.clearfix>a")).get(0);
         String nameToPrint1 = namePhone1.getText();
@@ -80,28 +79,19 @@ public class RozetkaTest {
         sendToDb(nameToPrint4, pricePhoneToPrint4);
     }
 
-    private void selectFromDropDown() {
-        driver.findElement(By.name("drop_link")).click();
-        driver.findElement(By.linkText("популярные")).click();
 
-    }
 
-    private void navigateToSmartphones() {
-        driver.findElement(By.linkText("Телефоны, ТВ и электроника")).click();
-        driver.findElement(By.linkText("Телефоны")).click();
-        driver.findElement(By.linkText("Смартфоны")).click();
-    }
 
-    private void login(String username, String password) {
-        driver.findElement(By.linkText("войдите в личный кабинет")).click();
-        driver.findElement(By.name("login")).click();
-        driver.findElement(By.name("login")).clear();
-        driver.findElement(By.name("login")).sendKeys(username);
-        driver.findElement(By.name("password")).click();
-        driver.findElement(By.name("password")).clear();
-        driver.findElement(By.name("password")).sendKeys(password);
-        driver.findElement(By.name("auth_submit")).click();
-    }
+//    private void login(String username, String password) {
+//        driver.findElement(By.linkText("войдите в личный кабинет")).click();
+//        driver.findElement(By.name("login")).click();
+//        driver.findElement(By.name("login")).clear();
+//        driver.findElement(By.name("login")).sendKeys(username);
+//        driver.findElement(By.name("password")).click();
+//        driver.findElement(By.name("password")).clear();
+//        driver.findElement(By.name("password")).sendKeys(password);
+//        driver.findElement(By.name("auth_submit")).click();
+//    }
 
     public void sendToDb(String namePhone, String phonePrice) {
         Connection conn = null;
@@ -131,42 +121,8 @@ public class RozetkaTest {
     @AfterClass(alwaysRun = true)
     public void tearDown() throws Exception {
         driver.quit();
-        String verificationErrorString = verificationErrors.toString();
-        if (!"".equals(verificationErrorString)) {
-            fail(verificationErrorString);
+
+
         }
     }
 
-    private boolean isElementPresent(By by) {
-        try {
-            driver.findElement(by);
-            return true;
-        } catch (NoSuchElementException e) {
-            return false;
-        }
-    }
-
-    private boolean isAlertPresent() {
-        try {
-            driver.switchTo().alert();
-            return true;
-        } catch (NoAlertPresentException e) {
-            return false;
-        }
-    }
-
-    private String closeAlertAndGetItsText() {
-        try {
-            Alert alert = driver.switchTo().alert();
-            String alertText = alert.getText();
-            if (acceptNextAlert) {
-                alert.accept();
-            } else {
-                alert.dismiss();
-            }
-            return alertText;
-        } finally {
-            acceptNextAlert = true;
-        }
-    }
-}
