@@ -3,7 +3,7 @@ package ua.rozetka.tests;
 /**
  * Created by AntonKa on 12/3/2016.
  */
-
+//why did I do that
 
 import java.sql.Connection;
 import java.sql.DriverManager;
